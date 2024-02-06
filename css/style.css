@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
+
+@media only screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 3% 0;
+        margin-left: 0;
+    }
+
+    nav ul li:last-child {
+        margin-left: 0;
+    }
+}
+
+body {
+    background-color: #292e30;
+    margin: 0;
+    min-height: 100vh;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #292e30;
+    color: white;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 5%;
+}
+
+nav ul li:last-child {
+    margin-left: auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 1.5vw;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all .5s;
+}
+
+nav ul li a:hover {
+    color: #f06543;
+}
+
+nav.stroke ul li a {
+    position: relative;
+}
+
+nav.stroke ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+}
+
+nav.stroke ul li a:hover:after {
+    width: 100%;
+}
+
+button {
+    background-color: #f06543;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 1.5vw;
+}
+
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 10%;
+}
+
+/* Top left text */
+.name {
+    position: absolute;
+    top: 26%;
+    left: 5%;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 7.5vw;
+}
+
+/* Centered text */
+.desc {
+    position: absolute;
+    top: 45%;
+    left: 37%;
+    text-align: justify;
+    transform: translate(-50%, -50%);
+    font-size: 2.2vw;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+/* download button */
+.btnCV {
+    position: absolute;
+    top: 62%;
+    left: 5%;
+    font-family: 'Epilogue', sans-serif;
+    padding: 2% 3%;
+    margin-bottom: 0;
+}
+
+.verLine {
+    border-left: 4px solid #f06543;
+    height: 50vw;
+    position: absolute;
+    left: 60%;
+    top: 0;
+}
+
+.abt {
+    margin: 10% 0 0 5.5%;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 2.2vw;
+    text-align: left;
+}
+
+#abtName {
+    margin-top: 5%;
+    font-size: 6.2vw;
+}
+
+#abtDesc {
+    margin-top: 25%;
+    padding-right: 12%;
+    font-size: 2vw;
+}
+
+.imgContainer {
+    float: right;
+    width: 33.33%;
+    height: 40%;
+    padding-right: 3%;
+}
+
+#skills {
+    margin-top: 65%;
+    margin-left: -5%;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 6.2vw;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: start;
+    margin: 4% 25% 40% 25%;
+}
+
+.skillItem {
+    background-color: #d9d9d9;
+    height: 65px;
+    width: 65px;
+    margin: 8px;
+    border-radius: 5%;
+}
+
+.project {
+    position: relative;
+    z-index: 1;
+    margin: 10% -77% 0 5.5%;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 2.2vw;
+}
+
+#works {
+    margin-top: 3%;
+    margin-right: -40%;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 5.7vw;
+}
+
+.boxProj {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    margin: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.projItem {
+    height: 30vw;
+    width: 75%;
+    margin: 0px 0px 0px 8px;
+    border-radius: 3%;
+}
+
+.projTitle {
+    text-align: center;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 2.2vw;
+    color: #F06543;
+    margin: 5% 18% 2% 18%;
+}
+
+.projDesc {
+    text-align: center;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 2vw;
+    color: white;
+    text-align: center;
+    margin: 10px 18%;
+}
+
+.container#project-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.container#project-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.projTitle,
+.projDesc {
+    position: relative;
+    z-index: 1;
+}
+
+#zoofinity {
+  background-image: url(../images/zoofinity.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#tipBucks {
+  background-image: url(../images/tipbucks.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#emotrack {
+  background-image: url(../images/emotrack.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#kneighbors {
+  background-image: url(../images/kneighbors.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
