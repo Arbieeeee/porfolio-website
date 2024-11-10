@@ -22,12 +22,15 @@ body {
     min-height: 100vh;
 }
 
+nav {
+    margin-top: 24px;
+}
+
 nav ul {
+    display: flex;
     list-style: none;
-    background-color: #292e30;
     color: white;
     padding: 8px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -82,12 +85,16 @@ nav.stroke ul li a:hover:after {
 button {
     background-color: #f06543;
     color: white;
-    padding: 10px 25px;
+    padding: 8px 18px;
     border: none;
-    border-radius: 40px;
+    border-radius: 20px;
     cursor: pointer;
     font-family: 'Epilogue', sans-serif;
     font-size: 1.5vw;
+}
+
+button:hover {
+    background-color: #FF8669;
 }
 
 /* Container holding the image and the text */
@@ -149,7 +156,7 @@ button {
 }
 
 #abtDesc {
-    margin-top: 25%;
+    margin-top: 20%;
     padding-right: 12%;
     font-size: 2vw;
 }
@@ -162,8 +169,7 @@ button {
 }
 
 #skills {
-    margin-top: 65%;
-    margin-left: -5%;
+    margin: 65% 0 0 -5%;
     font-family: 'Epilogue', sans-serif;
     font-size: 6.2vw;
     text-align: center;
@@ -255,30 +261,24 @@ button {
     z-index: 1;
 }
 
+.projectImg {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 #zoofinity {
   background-image: url(../images/zoofinity.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 
 #tipBucks {
   background-image: url(../images/tipbucks.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 
 #emotrack {
   background-image: url(../images/emotrack.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 
 #kneighbors {
   background-image: url(../images/kneighbors.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
 }
