@@ -13,15 +13,15 @@
       <ul>
         <li><a href="#home">HOME</a></li>
         <li><a href="#aboutMe">ABOUT</a></li>
-        <li><a href="#skills">SKILLS</a></li>
         <li><a href="#projects">PROJECTS</a></li>
-        <li><button>CONTACT</button></li>
+        <li><button class="contact">CONTACT</button></li>
       </ul>
     </nav>
 
     <div class="main">
       <div class="container-intro">
-        <div class="name">Kate Delos Reyes</div>
+        <div class="dummy"></div>
+        <div class="typewriter">Kate Delos Reyes</div>
         <div class="desc">
           An aspiring software developer. My passion is to build programs
           meaningful to the community.
@@ -34,129 +34,84 @@
           Download CV
         </button>
       </div>
-    </div>
 
-    <!-- <div class="container">
-      <img src="./images/background.png" alt="background" style="width: 100%" />
-      <div class="name">Kate Delos Reyes</div>
-      <div class="desc">
-        An aspiring software developer. My passion is to build programs
-        meaningful to the community.
-      </div>
-      <button
-        class="btnCV"
-        type="submit"
-        onclick="window.open('files/Kate Delos Reyes - Resume.pdf')"
-      >
-        Download CV
-      </button>
-    </div> -->
-
-    <div class="container">
-      <p class="abt" id="aboutMe">About me</p>
-      <div class="name" id="abtName">
-        Hello, I’m <span style="color: #f06543">Kate</span>
-      </div>
-      <div class="desc" id="abtDesc">
-        My coding journey began in junior high school when I first encountered
-        HTML and CSS. The art of structuring and styling web pages fascinated
-        me, sparking a passion that has grown ever since. I am keen on
-        constantly developing my skills, becoming a professional and looking
-        forward to work together with new people.
-      </div>
-      <div class="verLine"></div>
-      <div class="imgContainer">
-        <img
-          src="./images/pic.jpg"
-          alt="profilePic"
-          id="imgProf"
-          style="width: 100%"
-        />
-      </div>
-    </div>
-
-    <div class="container">
-      <p id="skills">My <span style="color: #f06543">Skills</span></p>
-      <div class="box">
-        <div class="skillItem">
-          <img src="./images/icons8-java-60.png" alt="Java icon" />
-          <!-- <p>Java</p> -->
-        </div>
-        <div class="skillItem">
-          <img src="./images/icons8-html-60.png" alt="HTML icon" />
-          <!-- <p>HTML</p> -->
-        </div>
-        <div class="skillItem">
-          <img src="./images/icons8-css3-60.png" alt="CSS icon" />
-          <!-- <p>CSS</p> -->
-        </div>
-        <div class="skillItem">
-          <img src="./images/icons8-javascript-60.png" alt="Javascript icon" />
-          <!-- <p>Javascript</p> -->
-        </div>
-        <div class="skillItem">
-          <img src="./images/icons8-python-60.png" alt="Python icon" />
-          <!-- <p>Python</p> -->
-        </div>
-
-        <div class="skillItem">
-          <img src="./images/icons8-dart-60.png" alt="Dart icon" />
-          <!-- <p>Dart</p> -->
+      <div class="container-about">
+        <p class="abt" id="aboutMe">About me</p>
+        <div id="desc">
+          <h3 class="key">> Kate.location</h3>
+          <h3 class="value">"Rodriguez, Rizal"</h3>
+          <h3 class="key">> Kate.education</h3>
+          <h3 class="value">
+            "BS Computer Science - Technological Institute of the Philippines
+            QC"
+          </h3>
+          <h3 class="key">> Kate.contactInfo</h3>
+          <h3 class="value">
+            ["
+            <a href="mailto:k.delosreyes1126@gmail.com"
+              >k.delosreyes1126@gmail.com</a
+            >
+            ", "<a
+              href="https://www.linkedin.com/in/kate-delos-reyes-72a5022b2/"
+              target="_blank"
+              >Linkedin</a
+            >", "<a href="https://github.com/Arbieeeee">Github</a>"]
+          </h3>
+          <h3 class="key">> Kate.interests</h3>
+          <h3 class="value">["Reading", "Coding", "Gaming"]</h3>
+          <h3 class="key">> Kate.skills</h3>
+          <h3 class="value">
+            ["JavaScript", "CSS", "HTML", "Flutter", "C#", "Git"]
+          </h3>
         </div>
       </div>
-    </div>
 
-    <div class="container" id="project-container">
-      <img
-        src="./images/background.png"
-        alt="background"
-        style="width: 100%; object-fit: cover"
-      />
-      <div id="projects" class="project">Projects</div>
-      <p id="works">My previous <span style="color: #f06543">works</span></p>
+      <div class="container-project">
+        <p class="projects" id="projects">Projects</p>
+        <p id="works">My previous <span style="color: #f06543">works</span></p>
+        <div class="boxProj">
+          <div class="projItem projectImg" id="zoofinity"></div>
+        </div>
 
-      <div class="boxProj">
-        <div class="projItem projectImg" id="zoofinity"></div>
+        <p class="projTitle">Zoofinity</p>
+        <p class="projDesc">
+          A Flutter-based mobile application focused on introducing users to
+          various Philippine endemic species and their habitats in the country.
+        </p>
+
+        <div class="boxProj">
+          <div class="projItem projectImg" id="tipBucks"></div>
+        </div>
+
+        <p class="projTitle">TIP Bucks Coffee</p>
+        <p class="projDesc">
+          A cafe management system in Java that manages order processing and
+          inventory, enhancing efficiency and optimizing cafe operations.
+        </p>
+
+        <div class="boxProj">
+          <div class="projItem projectImg" id="emotrack"></div>
+        </div>
+
+        <p class="projTitle">EmoTrack</p>
+        <p class="projDesc">
+          A web-based YouTube sentiment analysis app for user comments developed
+          in Python.
+        </p>
+
+        <div class="boxProj">
+          <div class="projItem projectImg" id="kneighbors"></div>
+        </div>
+
+        <p class="projTitle">
+          A Predictive Model for Student Employability Based on Skills Attribute
+          using K-Nearest Neighbors Algorithm
+        </p>
+        <p class="projDesc">
+          A Python application predicting a student's employability by analyzing
+          academic performance and skill characteristics.
+        </p>
       </div>
-
-      <p class="projTitle">Zoofinity</p>
-      <p class="projDesc">
-        A Flutter-based mobile application focused on introducing users to
-        various Philippine endemic species and their habitats in the country.
-      </p>
-
-      <div class="boxProj">
-        <div class="projItem projectImg" id="tipBucks"></div>
-      </div>
-
-      <p class="projTitle">TIP Bucks Coffee</p>
-      <p class="projDesc">
-        A cafe management system in Java that manages order processing and
-        inventory, enhancing efficiency and optimizing cafe operations.
-      </p>
-
-      <div class="boxProj">
-        <div class="projItem projectImg" id="emotrack"></div>
-      </div>
-
-      <p class="projTitle">EmoTrack</p>
-      <p class="projDesc">
-        A web-based YouTube sentiment analysis app for user comments developed
-        in Python.
-      </p>
-
-      <div class="boxProj">
-        <div class="projItem projectImg" id="kneighbors"></div>
-      </div>
-
-      <p class="projTitle">
-        A Predictive Model for Student Employability Based on Skills Attribute
-        using K-Nearest Neighbors Algorithm
-      </p>
-      <p class="projDesc">
-        A Python application predicting a student's employability by analyzing
-        academic performance and skill characteristics.
-      </p>
     </div>
   </body>
 </html>
