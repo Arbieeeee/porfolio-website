@@ -287,7 +287,7 @@ button:hover {
   font-family: "Epilogue", sans-serif;
   font-size: var(--font-size--larger);
   text-align: right;
-  margin: 2% 0;
+  margin: 2% 0 4%;
 }
 
 .boxProj {
@@ -326,6 +326,11 @@ button:hover {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.projectImg:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 #zoofinity {
@@ -388,6 +393,9 @@ button:hover {
   .projDesc {
     font-size: calc(var(--font-size--small) * 0.8);
     margin: 1% 5% 5%;
+  }
+  .projectImg:hover {
+    transform: none;
   }
   #bar {
     width: 90%;
